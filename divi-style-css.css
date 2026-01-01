@@ -1,0 +1,359 @@
+/*
+Theme Name: Divi Child
+Theme URI: http://www.elegantthemes.com/gallery/divi/
+Template: Divi
+Author: Elegant Themes
+Author URI: http://www.elegantthemes.com
+Description: Smart. Flexible. Beautiful. Divi is the most powerful theme in our collection.
+Version: 4.15.1.1648123574
+Updated: 2022-03-24 13:06:14
+
+*/
+
+@media screen and (min-width: 820px) and (max-width: 1500px) {
+    div#et-top-navigation {
+        margin-right: 100px;
+    }
+}
+
+@media screen and (max-width: 820px) {
+    #SunCTA_ID {
+        display: none;
+    }
+}
+
+.showSun {
+   /* transform: scale(1.75) !important;*/
+}
+
+.hideSun {
+    transform: scale(0.0) !important;
+}
+
+.showSunText {
+    display: block;
+    text-align: center;
+}
+
+.hideSunText {
+    display: none;
+    text-align: center;
+}
+
+.makeSunBigger {
+    transform: translate(0px, 0px) scale(1.75);
+    padding-top: 70px !important;
+    top: 2px !important;
+    right: 0px !important;
+}
+
+.makeSunBigger:hover {
+    transform: scale(2.1) !important;
+}
+
+.smallSun {
+    right: 30px !important;
+}
+
+.smallSunBackup {
+    padding-top: 65px !important;
+    top: 20px !important;
+    right: 30px !important;
+}
+
+.sunCssBackup {
+    color: #111111;
+    font-family: 'DM Sans', Helvetica, Arial, Lucida, sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 3px;
+    background-image: url(https://web.archive.org/web/20250603133703im_/https://www.freetree.io/wp-content/uploads/2022/03/sun.svg);
+    background-color: RGBA(255, 255, 255, 0);
+    position: fixed !important;
+    top: 0px;
+    right: 0px;
+    width: 160px;
+    height: 160px;
+    cursor: pointer !important;
+    left: unset !important;
+    bottom: unset !important;
+    z-index: 150000;
+    transition: cubic-bezier(0.87, 0, 0.13, 1) 0.25s;
+    background-size: 100%;
+}
+
+.sunCss {
+    opacity: 0;
+    color: #FFFFFF !important;
+    border-width: 5px !important;
+    border-color: #00aa3d;
+    border-radius: 8px;
+    font-family: 'DM Sans', Helvetica, Arial, Lucida, sans-serif !important;
+    font-weight: 600 !important;
+    background-color: #00aa3d;
+    padding: 6px 20px;
+    cursor: pointer;
+    z-index: 999999999999;
+    text-align: center;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    height: 48px;
+    top: 91%;
+    transition: all 500ms cubic-bezier(0.52, 0.11, 0.25, 1) 0ms;
+    box-shadow: 0px 12px 18px -6px rgb(0 0 0 / 30%);
+    font-size: clamp(14px, 2vw, 18px) !important;
+    line-height: 34px;
+}
+
+.sunCss:hover {
+    color: #054A3E !important;
+    /* border-color: #00aa3d !important; */
+    border-width: 7px !important;
+    /* background-image: initial; */
+    background-color: white;
+    transform: scaleX(1.05) scaleY(1.05)!important;
+}
+
+
+input#search::placeholder {
+    color: #555555;
+}
+
+.searchUnderline {
+    margin: 14px 0px;
+    font-size: 17px;
+    width: 100%;
+    text-align: center;
+    color: #fff;
+}
+
+.shopSearchHeader {
+    font-size: 64px;
+    text-align: center;
+    margin-top: 50px;
+    color: #fff;
+    font-family: CHAMP;
+    margin-bottom: 50px;
+}
+
+ul#shopCategoryList,
+ul#shopResultList {
+    list-style: none;
+    overflow: auto;
+    padding-top: 12px;
+    margin: 0;
+    flex-flow: row wrap;
+    -ms-flex-wrap: row-wrap;
+    justify-content: space-around;
+    -ms-flex-pack: justify;
+    align-content: flex-start;
+    display: flex;
+}
+
+ul#shopCategoryList li {
+    line-height: 20px;
+    background: #fff;
+    border: 1px solid #fff;
+    border-radius: 4px;
+    font-size: 18px;
+    width: 250px;
+    padding: 5px
+}
+
+ul#shopCategoryList li:hover {
+    border: 1px solid #fcde59;
+    line-height: 20px;
+    border-radius: 4px
+}
+
+input#search.shopSearchInput {
+    width: 100%;
+    margin-top: 16px;
+    line-height: 43px;
+    padding-left: 27px;
+    border-radius: 20px;
+    font-size: 20px;
+}
+
+ul#shopResultList li {
+    line-height: 20px;
+    background: #fff;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    float: left;
+    height: 154px;
+    margin-bottom: 10px;
+    margin-left: 5px;
+    margin-right: 5px;
+    width: 236px;
+    z-index: 1;
+}
+
+ul#shopResultList li.shopPlaceholder {
+    border-color: #fff;
+    display: none
+}
+
+ul#shopResultList li div.heading {
+    padding-top: 5px;
+    font-size: 16px;
+    margin: 0 5px;
+    text-align: center;
+    height: 55px;
+    vertical-align: middle;
+    display: table-cell;
+    width: 220px;
+    font-weight: 700;
+    border: 1px solid #044a3e;
+    border-radius: 20px;
+}
+
+#cdashboards,
+#seo_text {
+    margin-right: auto;
+    margin-left: auto
+}
+
+ul#shopResultList li.shop:hover {
+    -webkit-box-shadow: 0 0 12px 0 rgba(252, 222, 89, .75);
+    -moz-box-shadow: 0 0 12px 0 rgba(252, 222, 89, .75);
+    box-shadow: 0 0 12px 0 rgba(252, 222, 89, .75);
+
+}
+
+ul#shopResultList li div.domain {
+    background: #fff;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+    font-size: 13px;
+    color: #000;
+    height: 22px;
+    line-height: 15px;
+    vertical-align: middle;
+    display: table-cell;
+    width: 100%;
+    padding-left: 4px;
+    padding-right: 4px;
+}
+
+ul#shopResultList li div.shop-logo {
+    height: 55px;
+    line-height: 55px;
+    margin-top: 5px;
+    text-align: center
+}
+
+ul#shopResultList li div.shop-logo img {
+    max-height: 55px;
+    max-width: 150px;
+    vertical-align: middle
+}
+
+#content img,
+#mega-menu-wrap-header-logged-in-menu #mega-menu-header-logged-in-menu img,
+#mega-menu-wrap-header-logged-in-menu #mega-menu-header-logged-in-menu input,
+#mega-menu-wrap-header-logged-out-menu #mega-menu-header-logged-out-menu img,
+#mega-menu-wrap-header-logged-out-menu #mega-menu-header-logged-out-menu input,
+.advertica-image-post img,
+embed,
+iframe {
+    max-width: 100%
+}
+
+ul#shopResultList li div.description {
+    text-align: center;
+    overflow-y: hidden;
+    border-top: 1px solid #DDD;
+    padding: 10px 4px;
+    font-size: 100%
+}
+
+ul#shopResultList li div.labelPromotion {
+    text-align: center;
+    font-size: 13px;
+    color: #044a3e;
+}
+
+ul#shopResultList li div.payPerLead,
+ul#shopResultList li div.payPerSale {
+    display: table-cell;
+    vertical-align: middle;
+    float: left;
+    height: 50px;
+    font-size: 13px;
+    width: 50%;
+    text-align: center
+}
+
+ul#shopResultList li div.buttons {
+    overflow: auto;
+    border-top: 1px solid #DDD
+}
+
+ul#shopResultList li a.btnGoto {
+    color: #fff;
+    background: #333;
+    border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 3px;
+    cursor: pointer;
+    float: left;
+    font-size: 14px;
+    line-height: 36px;
+    text-align: center;
+    width: 208px
+}
+
+ul#shopResultList li a.btnGoto:hover {
+    color: #fcde59;
+    text-decoration: none
+}
+
+.frontpage_shop_image_div {
+    display: inline-block;
+    width: 148px;
+    height: 100%;
+    padding: 3px;
+    position: relative;
+    vertical-align: middle
+}
+
+a#linkTopShops,
+div#containerShopSearch {
+    font-size: 18px;
+    padding-right: 20px;
+    float: left
+}
+
+.frontpage_shop_image_div a img {
+    display: block;
+    margin: auto;
+    padding: 8px;
+    max-width: 150px !important;
+    max-height: 100px !important;
+}
+li.shop a {
+    color: #044a3e;
+}
+
+/*
+     FILE ARCHIVED ON 13:37:03 Jun 03, 2025 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 21:45:23 Dec 31, 2025.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+*/
+/*
+playback timings (ms):
+  captures_list: 0.763
+  exclusion.robots: 0.073
+  exclusion.robots.policy: 0.059
+  esindex: 0.013
+  cdx.remote: 6.142
+  LoadShardBlock: 73.002 (3)
+  PetaboxLoader3.datanode: 116.191 (5)
+  PetaboxLoader3.resolve: 95.655 (3)
+  load_resource: 186.799 (2)
+*/
